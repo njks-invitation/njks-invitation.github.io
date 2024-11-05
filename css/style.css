@@ -105,8 +105,6 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 40px;
   font-family: "Sacramento", Arial, serif;
   color: #fff;
-  text-decoration: underline wavy;
-  text-decoration-thickness: 2.5px
 }
 .fh5co-nav a {
   padding: 5px 10px;
