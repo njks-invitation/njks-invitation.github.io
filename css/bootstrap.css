@@ -1500,6 +1500,10 @@ pre code {
     left: 100%;
   }
 
+  .col-md-offset-center {
+    margin:0 auto;
+  }
+
   .col-md-offset-0 {
     margin-left: 0%;
   }
