@@ -63,6 +63,9 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
+	<!-- Add Event JS -->
+	<script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
 	</head>
 	<body>
@@ -113,10 +116,19 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Joefrey &amp; Sheila</h1>
+							<h1>Nitin &amp; Komal</h1>
 							<h2>We Are Getting Married</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+							<div title="Add to Calendar" class="addeventatc remove-style" style="box-shadow: none !important; background: none !important; margin-left: -3.9%;">
+								<p class="btn btn-default btn-sm" >Save The Date</p>
+								<span class="start">19-01-2025 00:00</span>
+								<span class="all_day_event">true</span>
+								<!-- <span class="timezone"></span> -->
+								<span class="title">Wedding</span>
+								<span class="description">Wedding</span>
+								<span class="location">Rajwada Resort & Hotel Mathura</span>
+							</div>
+							<!--<p><a title="Add to Calendar" class="btn btn-default btn-sm" data-id="gr23781588" href="https://www.addevent.com/event/gr23781588" target="_blank">Save the date</a> <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script></p>-->
 						</div>
 					</div>
 				</div>
@@ -609,8 +621,10 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
-
+    var d = new Date('Jan 19, 2025 00:00:00 -0500');
+	setTimeout(() => {
+		document.getElementsByClassName('addeventatc_icon')[0].outerHTML='';
+	}, 20);
     // default example
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
