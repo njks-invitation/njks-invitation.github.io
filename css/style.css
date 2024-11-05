@@ -104,6 +104,9 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   line-height: 40px;
   font-family: "Sacramento", Arial, serif;
+  color: #fff;
+  text-decoration: underline wavy;
+  text-decoration-thickness: 2.5px
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -299,6 +302,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 900px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top center;
   position: relative;
   width: 100%;
 }
