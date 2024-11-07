@@ -269,9 +269,9 @@
 				</div>
 				<div class="row animate-box">
 					<div class="col-md-10 col-md-offset-1">
-						<script type="text/javascript">var submitted=false</script>
+						<script type="text/javascript">var submitted=false;</script>
 						<iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='attending.html'}"></iframe>
-						<form class="form-inline" action="https://docs.google.com/forms/d/e/1FAIpQLSfgUtULvEoiqm3zS-GqECzPzyur9l9jYyL6xIxx7bPV6oxtoQ/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true">
+						<form class="form-inline" action="https://docs.google.com/forms/d/e/1FAIpQLSfgUtULvEoiqm3zS-GqECzPzyur9l9jYyL6xIxx7bPV6oxtoQ/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true;localStorage.setItem('name',document.getElementById('name').value)">
 							<div class="col-md-4 col-sm-4">
 								<div class="form-group">
 									<label for="name" name="entry.1541282420" class="sr-only">Name</label>
