@@ -55,6 +55,19 @@
 
 	</head>
 	<body>
+		<!-- <audio autoplay loop>
+			<source src="assets/AjjDinChadheya.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		  </audio>
+
+		  <button onclick="toggleMusic()">Mute/Unmute Music</button>
+
+		<script>
+		function toggleMusic() {
+			const audio = document.getElementById('bg-music');
+			audio.muted = !audio.muted;
+		}
+		</script> -->
 		
 	<div class="fh5co-loader"></div>
 	
@@ -206,51 +219,15 @@
 		<div id="fh5co-testimonial">
 			<div class="container">
 				<div class="row">
-					<div class="row animate-box">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<span>Best Wishes</span>
-							<h2>Friends Wishes</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<div class="wrap-testimony">
-								<div class="owl-carousel-fullwidth">
-									<div class="item">
-										<div class="testimony-slide active text-center">
-											<figure>
-												<img src="images/couple-1.jpg" alt="user">
-											</figure>
-											<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-											<blockquote>
-												<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"</p>
-											</blockquote>
-										</div>
-									</div>
-									<div class="item">
-										<div class="testimony-slide active text-center">
-											<figure>
-												<img src="images/couple-2.jpg" alt="user">
-											</figure>
-											<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-											<blockquote>
-												<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, at the coast of the Semantics, a large language ocean."</p>
-											</blockquote>
-										</div>
-									</div>
-									<div class="item">
-										<div class="testimony-slide active text-center">
-											<figure>
-												<img src="images/couple-3.jpg" alt="user">
-											</figure>
-											<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-											<blockquote>
-												<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-							</div>
+					<div class="invitation-video">
+						<video id="invitationVideo" width="100%" controls>
+							<source src="assets/Wedding_invitation.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<div id="playButton" class="play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); cursor: pointer; display: flex; align-items: center; justify-content: center; width: 70px; height: 70px; background-color: rgba(0, 0, 0, 0.5); border-radius: 50%;">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="40px" height="40px">
+								<path d="M8 5v14l11-7z"/>
+							</svg>
 						</div>
 					</div>
 				</div>
@@ -343,6 +320,26 @@
 			day: d.getDate(),
 			enableUtc: false
 		});
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+			const video = document.getElementById("invitationVideo");
+
+			if (!video) return; // Ensure the video element exists
+
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						video.play();
+					} else {
+						video.pause();
+					}
+				});
+			});
+
+			observer.observe(document.getElementById("invitation-video"));
+		});
+
 		</script>
 	</div>
 	</body>
