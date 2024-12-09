@@ -110,9 +110,19 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 5px 10px;
   color: #fff;
 }
+
+.ganeshJi {
+  max-width: 80px; 
+  height: auto; 
+  margin: 10px auto;
+}
+
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
     display: none;
+  }
+  .ganeshJi {
+    width: 40px; /* Smaller logo for smaller screens */
   }
 }
 .fh5co-nav ul {
