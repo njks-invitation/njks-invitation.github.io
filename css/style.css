@@ -123,6 +123,14 @@ h1, h2, h3, h4, h5, h6, figure {
   .ganeshJi {
     width: 40px; /* Smaller logo for smaller screens */
   }
+  .fh5co-nav #fh5co-logo {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    font-family: "Sacramento", Arial, serif;
+    color: #fff;
+  }
 }
 .fh5co-nav ul {
   padding: 0;
